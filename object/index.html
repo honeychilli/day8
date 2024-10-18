@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Person Object</title>
+</head>
+<body>
+  <h1>Person Object</h1>
+  <button id="say-hello-btn">Say Hello</button>
+  <button id="have-birthday-btn">Have Birthday</button>
+  <button id="introduce-yourself-btn">Introduce Yourself</button>
+  <div id="output"></div>
+
+  <script src="person.js"></script>
+  <script>
+    // Get the output div
+    const outputDiv = document.getElementById('output');
+
+    // Add event listeners to the buttons
+    document.getElementById('say-hello-btn').addEventListener('click', () => {
+      outputDiv.innerText = person.sayHello();
+    });
+
+    document.getElementById('have-birthday-btn').addEventListener('click', () => {
+      outputDiv.innerText = person.haveBirthday();
+    });
+
+    document.getElementById('introduce-yourself-btn').addEventListener('click', () => {
+      outputDiv.innerText = person.introduceYourself();
+    });
+  </script>
+</body>
+</html>

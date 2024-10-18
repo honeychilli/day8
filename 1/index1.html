@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example:Hide and Show para</h1>
+    <p id="para">This is a paragraph</p>
+    <button onclick="hidePara()">Hide</button>
+    <button onclick="showPara()">Show</button>
+    <button onclick="toggle()">Toggle</button>
+    <script>
+        let para = document.getElementById("para");
+        function hidePara() {
+            para.style.display = "none";
+        }
+        function showPara() {
+            para.style.display = "";
+        }
+        function toggle() {
+            para.hidden=(para.hidden)?false:true;
+        }
+    </script>
+
+</body>
+</html>
